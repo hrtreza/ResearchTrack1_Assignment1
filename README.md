@@ -15,12 +15,6 @@ To run the script in the simulator, use run.py, passing it the file names.
 $ python run.py Assignment.py
 ```
 
-You have also the solutions of the exercises (folder solutions)
-
-```bash
-$ python run.py solutions/exercise1_solution.py
-```
-
 Code explanation
 ---------------------
 
