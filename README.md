@@ -53,6 +53,16 @@ find golden tokens and allocate the rotations to different zones to detect the d
 
 Main loop: A while()-loop to control and navigate the robot in the right path to satisfy all desiered purposes.
 
+How it works
+-------------
+
+The robot turns away if the angle and distance between the robot and the golden token is too small.
+
+Whenever there is a minimal distance between a robot and a golden token, the robot performs a check to determine where the path to freedom is; it measures the distance between the wall on the right and the wall on the left (the walls are represented by golden tokens) and moves to the furthest one.
+
+In the absence of a golden token and a small distance between them (less than the distance between the robot and the closest golden token), the robot turns against the silver token and continues.
+
+It grabs the silver token when it is close enough, moves it behind itself, and then continues on its way.
 
 
 
