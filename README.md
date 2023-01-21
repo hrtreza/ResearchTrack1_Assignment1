@@ -27,19 +27,27 @@ Code explanation
 For better performance of the robot, its most important tasks have been implemented into several functions:
 
 Drive motors:
+```bash
 $ drive(speed, seconds)
+```
 By setting the "speed", it is possible to define the linear velocity of the robot. "seconds" indicates the duration of the generated speed.
 
 Rotation:
+```bash
 $ turn(speed, seconds)
+```
 By setting the "speed", it is possible to define the angular velocity of the robot. "seconds" indicates the duration of the generated speed.
 
 finding Silver tokens:
+```bash
 $ find_silver_token()
+```
 Generate the rotation and distance form the Silver Token respect to the robot. Retuens: 1)distance respect to the robot 2)rotation respect to the robot
 
 Obstacle avoidance:
+```bash
 $ avoid_collision()
+```
 find golden tokens and allocate the rotations to different zones to detect the distance of golden tokens respect to the robot. Returns: angle and distance of 1)right side obstacles 2)left side obstacles 3)front side obstacles
 
 
